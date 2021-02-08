@@ -1,0 +1,19 @@
+
+.p-d-flex.p-flex-column.p-shadow-1 div:hover{
+    opacity: 0.7;
+}
+.active-page{
+    opacity: 0.2;
+    border: none;
+}
+.p-d-flex.p-flex-column.p-shadow-1 div{
+    text-align: center;
+    background-color: wheat;
+    color:black;
+    font-size: 24px;
+   
+}
+
+
+
+  

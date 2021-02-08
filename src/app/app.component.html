@@ -1,53 +1,16 @@
-<div>
-  <strong>Html To PDF in Angular Application</strong>
-  </div>
-  <div>
-  <input type="button" value="Convert" (click)="convetToPDF()"/>
-  </div>
-   
-  <pre>
-  <div id="content">
-  <div></div>
-  </div>
-  <div>
-  <table id="contentToConvert">
-  <tbody>
-  <tr>
-  <th>Company</th>
-  <th>Contact</th>
-  <th>Country</th>
-  </tr>
-  <tr>
-  <td>Alfreds Futterkiste</td>
-  <td>Maria Anders</td>
-  <td>Germany</td>
-  </tr>
-  <tr>
-  <td>Centro comercial Moctezuma</td>
-  <td>Francisco Chang</td>
-  <td>Mexico</td>
-  </tr>
-  <tr>
-  <td>Ernst Handel</td>
-  <td>Roland Mendel</td>
-  <td>Austria</td>
-  </tr>
-  <tr>
-  <td>Island Trading</td>
-  <td>Helen Bennett</td>
-  <td>UK</td>
-  </tr>
-  <tr>
-  <td>Laughing Bacchus Winecellars</td>
-  <td>Yoshi Tannamuri</td>
-  <td>Canada</td>
-  </tr>
-  <tr>
-  <td>Magazzini Alimentari Riuniti</td>
-  <td>Giovanni Rovelli</td>
-  <td>Italy</td>
-  </tr>
-  </tbody>
-  </table>
-  </div>
-  </pre>
+<div class="p-grid ">
+    <div class="p-col-2 p-shadow-1">
+      <div class="p-d-flex p-flex-column p-shadow-1">
+        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/about" routerLinkActive="active-page">About</div>
+        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/resume" routerLinkActive="active-page">Resume</div>
+        <div class="p-mb-2 p-shadow-2 p-py-4" routerLink="/works" routerLinkActive="active-page">Works</div>
+        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/contact" routerLinkActive="active-page">Contact</div>
+        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/blog" routerLinkActive="active-page">Blog</div>
+      </div>
+    </div>
+    <div class="p-col-10 p-shadow-1 ">
+      <router-outlet></router-outlet>
+    </div> 
+</div>
+
+

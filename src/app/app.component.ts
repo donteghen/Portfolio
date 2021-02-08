@@ -8,10 +8,11 @@ import html2canvas from 'html2canvas'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'MySoftware Adventure';
  
  constructor(){}
- 
+
+ // pdf maker function
  convetToPDF(){
   var data = document.getElementById('contentToConvert');
   html2canvas(data).then(canvas =>{
