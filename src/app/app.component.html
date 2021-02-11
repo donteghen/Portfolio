@@ -1,16 +1,29 @@
-<div class="p-grid ">
-    <div class="p-col-2 p-shadow-1">
-      <div class="p-d-flex p-flex-column p-shadow-1">
-        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/about" routerLinkActive="active-page">About</div>
-        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/resume" routerLinkActive="active-page">Resume</div>
-        <div class="p-mb-2 p-shadow-2 p-py-4" routerLink="/works" routerLinkActive="active-page">Works</div>
-        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/contact" routerLinkActive="active-page">Contact</div>
-        <div class="p-mb-2 p-shadow-4 p-py-4" routerLink="/blog" routerLinkActive="active-page">Blog</div>
+
+<div class="container lower">
+  <div class="row">
+    <div class="col-sm-2">
+      <div class="text-center">
+        <div class="dash_link" routerLink="/about" routerLinkActive="selected-Link">
+          <i class="fas fa-user"></i><div>About</div>
+        </div>
+        <div class="dash_link" routerLink="/resume" routerLinkActive="selected-Link">
+          <i class="fas fa-file"></i><div>Reusme</div>
+        </div>
+        <div class="dash_link" routerLink="/works" routerLinkActive="selected-Link">
+          <i class="fas fa-code-branch"></i><div> Works</div>
+      </div>
+        <div class="dash_link" routerLink="/contact" routerLinkActive="selected-Link">
+          <i class="fas fa-address-card"></i><div> Contact</div>
+        </div>
+        <div class="dash_link" routerLink="/blog" routerLinkActive="selected-Link">
+          <i class="fas fa-blog"></i><div > Blog</div>
+        </div>
       </div>
     </div>
-    <div class="p-col-10 p-shadow-1 ">
-      <router-outlet></router-outlet>
-    </div> 
+    <div class="col-sm-10 bg-light">
+      <p-scrollPanel [style]="{width: '100%', height: '600px'}">
+          <router-outlet></router-outlet>
+      </p-scrollPanel>
+    </div>
+  </div>
 </div>
-
-

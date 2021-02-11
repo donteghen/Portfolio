@@ -23,8 +23,8 @@ const routes: Routes = [
   path:'works',
   loadChildren : () => import('./ui/works/works.module').then(m => m.WorksModule)
 },
-{path:'', pathMatch:'full', redirectTo: '/home'},
-{path: '**', redirectTo: '/home'}
+{path:'', pathMatch:'full', redirectTo: '/about'},
+{path: '**', redirectTo: '/about'}
 ];
 
 @NgModule({
