@@ -5,13 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {ButtonModule} from 'primeng/button'
+import { CommonModule } from '@angular/common';
+import { BlogDetailComponent } from './ui/blog-detail/blog-detail.component';
 
 @NgModule({
   declarations: [
-   AppComponent
+   AppComponent,
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, ScrollPanelModule,
+    BrowserModule, BrowserAnimationsModule, ScrollPanelModule, ButtonModule, CommonModule, 
     AppRoutingModule
   ],
   providers: [],

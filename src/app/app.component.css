@@ -1,21 +1,21 @@
 
 .dash_link{
     width: 100px;
-    height: 50px; 
-    background-color: rgb(89, 174, 223); 
+    height: 100px; 
+    background-color: rgb(130, 88, 228); 
     color: white;
     margin-top: 4px;
     margin-bottom: 4px;
 }
 
 .dash_link:hover{
-    background-color: rgb(7, 58, 87); 
+    background-color: rgb(35, 21, 87); 
     color: white;
     cursor:pointer;
 }
 
 .selected-Link{
-    background-color: rgb(7, 58, 87); 
+    background-color: rgb(35, 21, 87); 
     color: white;
 }
 

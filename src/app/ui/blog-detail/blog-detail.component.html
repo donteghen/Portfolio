@@ -1,0 +1,60 @@
+<div class="my-4">
+    <div col-sm-12>
+        <img src='https://source.unsplash.com/weekly?water' width="100%" height="400px">
+    </div>
+    <div class="col-sm-12 my-2">
+        <span class="mx-4"><i class="fas fa-calendar-alt"></i> feb, 26 2020</span>
+        <span class="mx-4"><i class="fas fa-user"></i> Donald Teghen</span>
+        <span class="mx-4"><i class="far fa-comment"></i> 0 Comments</span>
+    </div>
+    <div class="col-sm-12 my-2">
+        <h2>Title of article</h2>
+        <p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about. We thought a book is quite a wait away and decided to share some of the notes from his New York business meetings meanwhile.
+            As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.
+            As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about.
+        </p>
+        <div class="row my-2">
+            <div class="col-sm-6"><img class="rounded mx-2" src="https://source.unsplash.com/weekly?river" width="100%" height="250px"></div>
+            <div class="col-sm-6"><img class="rounded mx-2" src="https://source.unsplash.com/weekly?nature" width="100%" height="250px"></div>
+        </div>
+        <p>As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about. We thought a book is quite a wait away and decided to share some of the notes from his New York business meetings meanwhile.
+            As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities.
+            As Vintage decided to have a closer look into fast-paced New York web design realm in person, we get to acquaint with most diverse and exceptionally captivating personalities. We encounter professionals with careers to covet and lives to write books about.
+        </p>
+    </div>
+    <div class="my-2">
+        <div class="row py-2">
+            <div class="col-sm-2 p-4"><span>TAGS:</span></div>
+            <div class="col-sm-2 shadow-lg bg-white p-4 mr-2">Angular</div>
+            <div class="col-sm-2 shadow-lg bg-white p-4 mr-2" >Node</div>
+            <div  class="col-sm-2 shadow-lg bg-white p-4 mr-2" >Ionic</div >
+            <div  class="col-sm-2 shadow-lg bg-white p-4 mr-2" >.Net Framework</div >
+        </div>
+    </div>
+
+    <div class="my-4" style="background-color: rgb(35, 21, 87); color: white;">
+        <div class="mx-2">
+            <h2>Comments</h2>
+            <div class="m-2">
+                No commets yet....
+            </div>
+        </div>
+        <div class="mx-2">
+            <h2>Leve a comment</h2>
+            <div class="py-2 ">
+                <form [formGroup]="form" (ngSubmit)="submit(form)">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" name="name" formControlName="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Comment:</label>
+                        <textarea class="form-control" name="comment"  cols="30" rows="10" formControlName="comment"></textarea>
+                    </div>
+                    <div class="mt-2"><button type="submit" [disabled]="form.invalid" class="btn btn-primary">Send</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

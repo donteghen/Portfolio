@@ -1,0 +1,32 @@
+h3{
+    text-decoration: underline;
+    text-decoration-color: rgb(35, 21, 87); 
+    text-decoration-style: solid;
+    text-decoration-thickness: 10px;
+}
+
+p, h2, h3, h4, h5, div,a{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+span, a {
+    animation: color-change 3s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(45, 35, 83); }
+    50% { color: rgb(180, 13, 158); }
+    100% { color: rgb(19, 226, 216); }
+  }
+
+  
+  .more-text:hover .arrow{
+    opacity: 1;
+  }
+  .arrow{
+    transition: .5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 40px;
+    float: right;
+  }

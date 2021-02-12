@@ -1,1 +1,37 @@
-<p>contact works!</p>
+<div class="my-4 mx-2">
+    <h2>Get <span>In</span> <span> Touch</span></h2>
+    <div class="row my-2">
+        <div class="col-sm-3 shadow-lg bg-white rounded text-center py-4 mx-4">
+            <span class="my-2 p-4" style="font-size: 50px; color: rgb(135, 85, 192);"><i class="fas fa-map-marker-alt"></i></span>
+            <p class="my-2 p-4">Nihan Sokak, Ataşehir  Istanbul / Turkiye</p>
+        </div>
+        <div class="col-sm-3 shadow-lg bg-white rounded text-center py-4 mx-4">
+            <span class="my-2 p-4" style="font-size: 50px; color: rgb(135, 85, 192);"><i class="fas fa-phone-volume"></i></span>
+            <p class="my-2 p-4">+90 536 480 2141</p>
+        </div>
+        <div class="col-sm-3 shadow-lg bg-white rounded text-center py-4 mx-4">
+            <span class="my-2 p-4" style="font-size: 50px; color: rgb(135, 85, 192);"><i class="fas fa-envelope-open-text"></i></span>
+            <p class="my-2 p-4">donaldteghen@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="row my-4">
+        <div class="col-sm-12">
+            <form [formGroup]="form" (ngSubmit)="sendEmail(form)">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" formControlName="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control" formControlName="email" email required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Message:</label>
+                    <textarea name="message" class="form-control" cols="100" rows="10" formControlName="message" required></textarea>
+                </div>
+                <div class="mt-2"><button type="submit" [disabled]="form.invalid" class="btn btn-primary">Send</button></div>
+            </form>
+        </div>
+    </div>
+</div>
