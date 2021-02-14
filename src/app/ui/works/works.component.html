@@ -5,19 +5,17 @@
         <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectAngular()">Angular</span>
         <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectNode()">Node</span>
         <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectIonic()">Ionic</span>
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectNetFramework()">.Net Framework</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectOthers()">Others</span>
     </div>
     <div class="row">
-        <div class="col-md-4" *ngFor="let view of viewItems">
-            <div class="container m-2" (click)="goToPage('https://github.com/donteghen/tic-tac-toe-with-Angular-10')">
-                <img [src]="view" width="100%" height="400px" class="image rounded" >
-                <div class="middle">
-                    <div class="text">
-                        <strong style=" font-size:20">Angular Project One</strong>
-                        <p>Angular</p>
-                    </div>
-                  </div>
+        <div class="col-sm-6 my-2" *ngFor="let work of works">
+          <div class="card" >
+            <img class="card-img-top" [src]="work.imgUrl" alt="Card image cap" width="100%" height="300px">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted">{{work.description}}</h6>
+              <h5 class="card-title">{{work.title}}</h5>
+              <a (click)="goToPage(work.gitUrl)" class="more-text">See Source Code...<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></a>
             </div>
+          </div>
         </div>
-    </div>
 </div>

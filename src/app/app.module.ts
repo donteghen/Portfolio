@@ -7,7 +7,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import {ScrollPanelModule} from 'primeng/scrollpanel';
 import {ButtonModule} from 'primeng/button'
 import { CommonModule } from '@angular/common';
-import { BlogDetailComponent } from './ui/blog-detail/blog-detail.component';
+import { ProjectService } from './services/project.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +17,7 @@ import { BlogDetailComponent } from './ui/blog-detail/blog-detail.component';
     BrowserModule, BrowserAnimationsModule, ScrollPanelModule, ButtonModule, CommonModule, 
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ProjectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

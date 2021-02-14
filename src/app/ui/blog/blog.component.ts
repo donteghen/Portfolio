@@ -11,6 +11,7 @@ images : string[] = ['https://source.unsplash.com/weekly?water', 'https://source
   constructor() { }
 
   ngOnInit(): void {
+  
   }
 
 }

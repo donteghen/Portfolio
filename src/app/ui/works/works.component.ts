@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from 'src/app/models/project';
+import { ProjectService } from 'src/app/services/project.service';
 
 @Component({
   selector: 'app-works',
@@ -6,36 +8,34 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./works.component.css']
 })
 export class WorksComponent implements OnInit {
- angular : string[] = ['https://source.unsplash.com/weekly?water', 'https://source.unsplash.com/weekly?river'];
- node : string[] = ['https://source.unsplash.com/weekly?tree','https://source.unsplash.com/weekly?forest'];
- ionic : string[] = ['https://source.unsplash.com/weekly?animal', 'https://source.unsplash.com/weekly?wild'];
- netframwork : string[]= ['https://source.unsplash.com/weekly?house', 'https://source.unsplash.com/weekly?city'];
- viewItems : string[];
-  constructor() { }
+ All : Project[];
+ works: Project[];
+  constructor(private projService: ProjectService) { }
 
   ngOnInit(): void {
+    this.All = this.projService.getAllProject();
+    console.log(this.All)
     this.selectAll();
-    console.log(this.viewItems);
   }
 
   selectAll(){
-    this.viewItems = [...this.angular, ...this.ionic, ...this.node, ...this.netframwork];
+    this.works = this.All;
   }
 
   selectAngular(){
-    this.viewItems = this.angular;
+    this.works = this.All.filter(proj => proj.tags.includes("Angular"))
   }
 
   selectNode(){
-    this.viewItems = this.node;
+    this.works = this.All.filter(proj => proj.tags.includes("NodeJS"))
   }
 
   selectIonic(){
-    this.viewItems = this.ionic;
+    this.works = this.All.filter(proj => proj.tags.includes("Ionic"))
   }
 
-  selectNetFramework(){
-    this.viewItems = this.netframwork;
+  selectOthers(){
+    this.works = this.All.filter(proj => proj.tags.includes("Others"))
   }
   goToPage(url:string){
     window.open(url, "_blank");
