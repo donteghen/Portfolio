@@ -2,7 +2,7 @@
 .dash_link{
     width: 100px;
     height: 100px; 
-    background-color: rgb(130, 88, 228); 
+    background-color: rgb(138, 103, 219); 
     color: white;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -23,3 +23,24 @@
     position: relative;
     top: 20px;
 }
+
+.icon-selected{
+    color: rgb(35, 21, 87);
+}
+
+@media (max-width: 575.98px) { 
+    .col-2{
+        display: none; 
+    }
+    .aligner span{
+        color: rgb(138, 103, 219);
+       margin: 5px; 
+       padding: 5px;
+    }
+ }
+ 
+@media (min-width: 575.98px) { 
+    .aligner span{
+        display: none;
+    }
+ }
