@@ -9,13 +9,15 @@ import {ButtonModule} from 'primeng/button'
 import { CommonModule } from '@angular/common';
 import { ProjectService } from './services/project.service';
 import {HttpClientModule} from '@angular/common/http';
+import { HomeModule } from './ui/home/home.module';
+
 
 @NgModule({
   declarations: [
    AppComponent,
   ],
   imports: [
-    BrowserModule, BrowserAnimationsModule, ScrollPanelModule, ButtonModule, CommonModule, HttpClientModule,
+    BrowserModule, BrowserAnimationsModule, ScrollPanelModule, ButtonModule, CommonModule, HttpClientModule, HomeModule,
     AppRoutingModule
   ],
   providers: [ProjectService],
