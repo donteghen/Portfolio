@@ -1,0 +1,24 @@
+
+<div class="bg-info text-center mt-4 mb-4 large_screen">
+    <button class='btn btn-secondary text-center float-right' (click)="activeModal.close()">X</button>
+    <youtube-player 
+    [videoId]="videoID"
+    suggestedQuality="default"
+    [height]="600"
+    [width]="960"
+    [startSeconds]="0"
+    [endSeconds]="60">
+    </youtube-player> 
+</div>
+
+<div class="text-center mt-4 mb-4 small_screen">
+    <button class='btn btn-secondary text-center float-right' (click)="activeModal.close()">X</button>
+    <youtube-player 
+    [videoId]="videoID"
+    suggestedQuality="default"
+    [height]="640"
+    [width]="360"
+    [startSeconds]="0"
+    [endSeconds]="60">
+    </youtube-player> 
+</div>

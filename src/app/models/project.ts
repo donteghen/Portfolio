@@ -5,4 +5,5 @@ export interface Project{
     tags:string[];
     imgUrl: string;
     gitUrl: string;
+    videoID:string;
 }

@@ -10,15 +10,19 @@ import { CommonModule } from '@angular/common';
 import { ProjectService } from './services/project.service';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeModule } from './ui/home/home.module';
-
+import { VideoComponent } from './video/video.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { YouTubePlayerModule } from '@angular/youtube-player';
 
 @NgModule({
   declarations: [
    AppComponent,
+   VideoComponent,
   ],
   imports: [
     BrowserModule, BrowserAnimationsModule, ScrollPanelModule, ButtonModule, CommonModule, HttpClientModule, HomeModule,
-    AppRoutingModule
+    AppRoutingModule, YouTubePlayerModule,
+    NgbModule
   ],
   providers: [ProjectService],
   bootstrap: [AppComponent]

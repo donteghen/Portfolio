@@ -1,11 +1,11 @@
 <div class="my-4">
     <div class="my-4"><h2 >Creative<span class="animate"> Projects</span></h2></div>
     <div class="d-flex my-2">
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectAll()">All</span>
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectAngular()">Angular</span>
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectNode()">Node</span>
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectIonic()">Ionic</span>
-        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="selectOthers()">Others</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="select()">All</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="select('Angular')">Angular</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="select('NodeJS')">Node</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="select('Ionic')">Ionic</span>
+        <span class="p-shadow-1 py-2 px-4 mr-2" (click)="select('Others')">Others</span>
     </div>
     <div class="row">
         <div class="col-sm-6 my-2" *ngFor="let work of works">
@@ -14,7 +14,10 @@
             <div class="card-body">
               <h6 class="card-subtitle mb-2 text-muted">{{work.description}}</h6>
               <h5 class="card-title">{{work.title}}</h5>
-              <a (click)="goToPage(work.gitUrl)" class="more-text">See Source Code...<span class="arrow"><i class="fas fa-arrow-circle-right"></i></span></a>
+              <div class="my-2 py-2">
+                <button class="btn btn-primary float-left" (click)="goToPage(work.gitUrl)"><span><i class="fas fa-code-branch"></i></span>Get Source Code</button>
+                <button class="btn btn-primary float-right" (click)='open()'><span><i class="fab fa-youtube"></i></span>Watch Demo</button>
+              </div>
             </div>
           </div>
         </div>
