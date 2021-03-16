@@ -8,7 +8,7 @@ h3{
 p, h2, h3, h4, h5, div{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-span {
+/* span {
     animation: color-change 3s infinite;
   }
   
@@ -20,4 +20,4 @@ span {
   .whitener:hover{
     color: white !important;
     text-decoration: none;
-  }
+  } */

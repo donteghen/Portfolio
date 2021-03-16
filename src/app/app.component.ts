@@ -9,4 +9,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'MySoftware Adventure';
+  socialLink :string[];
+  constructor(){
+    this.socialLink = ['https://www.facebook.com/donaldteghen/','https://github.com/donteghen',
+    'https://www.linkedin.com/in/donald-ticha-teghen-420283125/'];
+  }
+  goToPage(url:string){
+    window.open(url, "_blank");
+  }
 }
