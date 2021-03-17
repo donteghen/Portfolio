@@ -1,4 +1,9 @@
-<div class="my-4 mx-2">
+
+<div class="row">
+    <img class="contact_img" src="assets/contacts.jpg">
+</div>
+
+<div class="contact-form my-2 py-2">
     <h2>Get <span>In</span> <span> Touch</span></h2>
     <div class="row my-2">
         <div class="col-sm-3 shadow-lg bg-white rounded text-center py-4 mx-4">
@@ -36,7 +41,7 @@
                     <textarea name="message" class="form-control" cols="100" rows="10" formControlName="message" required></textarea>
                     <div *ngIf="message.touched && message.invalid" class="bg-warning"> Please enter a correct message</div>
                 </div>
-                <div class="mt-2"><button type="submit" [disabled]="isLoading" class="btn btn-primary">Send</button></div>
+                <div class="mt-2"><button type="submit" [disabled]="isLoading" class="btn sub_but btn-block">Send</button></div>
             </form>
         </div>
     </div>

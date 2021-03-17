@@ -2,7 +2,7 @@
     position: absolute;
     top: 0%;
     left:100%;
-    padding: 2px 2px;
+    /* padding: 2px 2px; */
 }
 
 @media(max-width: 575.98px){

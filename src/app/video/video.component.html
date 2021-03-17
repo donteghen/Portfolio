@@ -1,6 +1,6 @@
 
-<div class="bg-info text-center mt-4 mb-4 large_screen">
-    <button class='btn btn-secondary text-center float-right' (click)="activeModal.close()">X</button>
+<div class="bg-info text-center  large_screen">
+    <button class='btn btn-primary text-center float-right' (click)="activeModal.close()">X</button>
     <youtube-player 
     [videoId]="videoID"
     suggestedQuality="default"
@@ -11,8 +11,8 @@
     </youtube-player> 
 </div>
 
-<div class="text-center mt-4 mb-4 small_screen">
-    <button class='btn btn-secondary text-center float-right' (click)="activeModal.close()">X</button>
+<div class="bg-info text-center  small_screen">
+    <button class='btn btn-primary text-center float-right' (click)="activeModal.close()">X</button>
     <youtube-player 
     [videoId]="videoID"
     suggestedQuality="default"
