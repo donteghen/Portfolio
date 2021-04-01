@@ -17,6 +17,7 @@ export class WorksComponent implements OnInit {
   ngOnInit(): void {
     this.All = this.projService.getAllProject();
     this.select();
+    
   }
   select(tag?: string){
     this.works = tag ? this.All.filter(proj => proj.tags.includes(tag)) : this.All
@@ -28,7 +29,7 @@ export class WorksComponent implements OnInit {
       animation:true,
       size:'xl'
     });
-    modalRef.componentInstance.videoID = 'QMP-o8WXSPM'; //QMP-o8WXSPM dQw4w9WgXcQ
+    modalRef.componentInstance.videoID = 'apVD1ewJcqc'; //QMP-o8WXSPM dQw4w9WgXcQ
   }
 
   goToPage(url:string){

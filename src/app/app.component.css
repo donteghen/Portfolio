@@ -6,7 +6,7 @@
     color: white;
     margin-top: 2px;
     margin-bottom: 2px;
-    
+    outline: none;
 }
 div.col-2{
     background-color:#0A162C;
@@ -25,15 +25,18 @@ div>a{
     
     cursor:pointer;
     opacity: 0.8;
+    outline: none;
 }
 .dash_link:active{
     border: none !important;
+    outline: none;
 }
 
 .selected-Link{
     background-color: #14397e;
     color: white;
     border: none !important;
+    outline: none;
 }
 
 .container.lower{
