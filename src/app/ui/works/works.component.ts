@@ -18,18 +18,19 @@ export class WorksComponent implements OnInit {
     this.All = this.projService.getAllProject();
     this.select();
     
+    
   }
   select(tag?: string){
     this.works = tag ? this.All.filter(proj => proj.tags.includes(tag)) : this.All
   }
   
-  open() {
+  open(videoId:string) {
     const modalRef = this.modalService.open(VideoComponent, {
       centered:true,
       animation:true,
       size:'xl'
     });
-    modalRef.componentInstance.videoID = 'apVD1ewJcqc'; //QMP-o8WXSPM dQw4w9WgXcQ
+    modalRef.componentInstance.videoID = videoId; //QMP-o8WXSPM dQw4w9WgXcQ
   }
 
   goToPage(url:string){
